@@ -1,4 +1,8 @@
 DemoApp::Application.routes.draw do
+  resources :microposts
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -13,7 +17,7 @@ DemoApp::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-  # Sample resource route with options:
+  #Sample resource route with options:
   #   resources :products do
   #     member do
   #       get 'short'
